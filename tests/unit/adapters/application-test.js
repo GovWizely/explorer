@@ -3,13 +3,14 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('adapter:application', 'ApplicationAdapter', {
-  // Specify the other units that are required for this test.
-  // needs: ['serializer:foo']
-});
+moduleFor('adapter:application', 'ApplicationAdapter');
 
-// Replace this with your real tests.
 test('it exists', function() {
   var adapter = this.subject();
   ok(adapter);
+});
+
+test('pathForType', function() {
+  var adapter = this.subject();
+  equal(adapter.pathForType('FooBarEntry'), 'foo_bar/search');
 });
