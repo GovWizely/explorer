@@ -2,6 +2,7 @@ import {
   moduleFor,
   test
 } from 'ember-qunit';
+import ENV from 'explorer/config/environment';
 
 moduleFor('adapter:application', 'ApplicationAdapter');
 
@@ -15,12 +16,12 @@ test('buildUrl: query arguments', function() {
     type = 'explorer@model:consolidated-screening-list-entry:';
   equal(
     adapter.buildUrl(type, {}),
-    'http://localhost:3000/consolidated_screening_list/search'
+    ENV.webservicesBaseURL + '/consolidated_screening_list/search'
   );
 
   equal(
     adapter.buildUrl(type, {page: 2}),
-    'http://localhost:3000/consolidated_screening_list/search?offset=10'
+    ENV.webservicesBaseURL + '/consolidated_screening_list/search?offset=10'
   );
 });
 
@@ -29,7 +30,7 @@ test('buildUrl: supported model types', function() {
     type = 'explorer@model:parature-faq-entry:';
   equal(
     adapter.buildUrl(type, {}),
-    'http://localhost:3000/parature_faq/search'
+    ENV.webservicesBaseURL + '/parature_faq/search'
   );
 
   throws(
