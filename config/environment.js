@@ -29,6 +29,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     ENV.baseURL = '/'; // Testem prefers this...
+    ENV.webservicesBaseURL = 'http://localhost:4200/api';  // TODO don't hard-code this
   }
 
   if (environment === 'production') {
