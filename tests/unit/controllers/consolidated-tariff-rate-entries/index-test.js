@@ -6,6 +6,7 @@ import {
 moduleFor('controller:consolidated-tariff-rate-entries/index', 'ConsolidatedTariffRateEntriesIndexController', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
+  needs: ['controller:consolidated-tariff-rate-entries']
 });
 
 // Replace this with your real tests.
