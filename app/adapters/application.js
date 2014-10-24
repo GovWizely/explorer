@@ -41,6 +41,7 @@ export default DS.RESTAdapter.extend({
       'explorer@model:consolidated-screening-list-entry:': 'consolidated_screening_list',
       'explorer@model:parature-faq-entry:': 'parature_faq',
       'explorer@model:trade-event:': 'trade_events',
+      'explorer@model:consolidated-tariff-rate-entry:': 'consolidated_tariff_rate',
     };
     var path = supported[type];
 

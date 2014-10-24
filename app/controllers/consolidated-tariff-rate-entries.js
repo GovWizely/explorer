@@ -32,8 +32,10 @@ export default Ember.Controller.extend({
   pageField: Ember.computed.oneWay('pageField'),
 
   sourceList: [
-    {value: 'AUSTRALIA', label: 'AUSTRALIA'},
-    {value: 'KOREA', label: 'KOREA'}
+    {value: 'AU', label: 'FTA Australia Tariff Rates'},
+    {value: 'CR', label: 'FTA Costa Rica Tariff Rates'},
+    {value: 'SV', label: 'FTA El Salvador Tariff Rates'},
+    {value: 'KR', label: 'FTA South Korea Tariff Rates'}
   ],
 
   countryList: [
