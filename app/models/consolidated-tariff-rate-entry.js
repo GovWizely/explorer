@@ -32,8 +32,10 @@ export default DS.Model.extend({
   link_url: DS.attr('string'),
   quota_name: DS.attr('string'),
   industry: DS.attr('string'),
-  annual_rates: DS.attr('string'),
-  alt_annual_rates: DS.attr('string'),
+
+  annual_rates: DS.attr('array'),
+  alt_annual_rates: DS.attr('array'),
+
   countries: DS.attr('string'),
   source: DS.attr('string')
 });
