@@ -46,6 +46,7 @@ export default DS.RESTAdapter.extend({
       'explorer@model:market-research-library:': 'market_research_library',
       'explorer@model:ita-office-location:': 'ita_office_locations',
       'explorer@model:country-commercial-guide:': 'country_commercial_guides',
+      'explorer@model:sharepoint-trade-article:': 'trade_articles'
     };
     var path = supported[type];
 
@@ -66,7 +67,7 @@ export default DS.RESTAdapter.extend({
 
     for (key in query) {
       if (query[key] && query[key] !== 'undefined') {
-        params.push(key+'='+query[key]);
+        params.push(key+'='+encodeURIComponent(query[key]));
       }
     }
 
