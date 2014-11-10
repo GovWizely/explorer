@@ -8,9 +8,9 @@ export default Ember.ArrayController.extend({
 
   countries: null,
   countriesField: function() {
-    var sources = String(this.get('countries')).split(',');
+    var countries = String(this.get('countries')).split(',');
     var selected = this.get('countryList').filter(function(item) {
-      return sources.find(function(given) {
+      return countries.find(function(given) {
         return (item.value === given);
       });
     });
@@ -39,8 +39,8 @@ export default Ember.ArrayController.extend({
     {value: 'ISN', label: 'Nonproliferation Sanctions (ISN) - State Department'},
     {value: 'PLC', label: 'Palestinian Legislative Council List (PLC) - Treasury Department'},
     {value: 'SSI', label: 'Sectoral Sanctions Identifications List (SSI) - Treasury Department'},
-    {value: 'SDN', label: 'Special Designated Nationals (SDN) - Treasury Department'},
-    {value: 'UVL', label: 'Unverified List - Bureau of Industry and Security'}
+    {value: 'SDN', label: 'Specially Designated Nationals (SDN) - Treasury Department'},
+    {value: 'UVL', label: 'Unverified List (UVL) - Bureau of Industry and Security'}
   ],
 
   countryList: [
