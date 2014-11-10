@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  queryParams: ['q', 'countries', 'industries', 'page'],
+  queryParams: ['q', 'countries', 'page'],
 
   q: null,
   qField: Ember.computed.oneWay('q'),
@@ -16,17 +16,6 @@ export default Ember.Controller.extend({
     });
     return selected;
   }.property('countries'),
-
-  industries: null,
-  industriesField: function() {
-    var industries = String(this.get('industries')).split(',');
-    var selected = this.get('industryList').filter(function(item) {
-      return industries.find(function(given) {
-        return (item.value === given);
-      });
-    });
-    return selected;
-  }.property('industries'),
 
   page: 1,
   pageField: Ember.computed.oneWay('pageField'),
@@ -44,12 +33,12 @@ export default Ember.Controller.extend({
     {value: 'Food Processing & Packaging', label: 'Food Processing & Packaging'},
     {value: 'Health Technologies', label: 'Health Technologies'},
     {value: 'Industrial Equipment & Supplies', label: 'Industrial Equipment & Supplies'},
-	{value: 'Information & Communication', label: 'Information & Communication'},
-	{value: 'Marine Industries', label: 'Marine Industries'},
-	{value: 'Paper, Printing, Graphic Arts', label: 'Paper, Printing, Graphic Arts'},
-	{value: 'Security & Safety', label: 'Security & Safety'}, 
-	{value: 'Services', label: 'Services'}, 
-	{value: 'Used & Reconditioned Equipment', label: 'Used & Reconditioned Equipment'},  
+    {value: 'Information & Communication', label: 'Information & Communication'},
+    {value: 'Marine Industries', label: 'Marine Industries'},
+    {value: 'Paper, Printing, Graphic Arts', label: 'Paper, Printing, Graphic Arts'},
+    {value: 'Security & Safety', label: 'Security & Safety'}, 
+    {value: 'Services', label: 'Services'}, 
+    {value: 'Used & Reconditioned Equipment', label: 'Used & Reconditioned Equipment'},  
   ],
 
   countryList: [

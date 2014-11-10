@@ -6,10 +6,10 @@ export default Ember.Route.extend({
 
     var p = transition.queryParams;
 
-    return this.store.find('market-research-library', {
+    return this.store.find('ita-office-location', {
       q: p.q,
       countries: p.countries,
-      industries: p.industries,
+      country: p.country,
       page: p.page
     });
   }
