@@ -1,10 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-  queryParams: ['q', 'countries', 'sources', 'page'],
+  queryParams: ['q', 'countries', 'sources', 'page', 'fuzziness', 'name'],
 
   q: null,
   qField: Ember.computed.oneWay('q'),
+
+  name: null,
+  nameField: Ember.computed.oneWay('name'),
+
+  fuzziness: null,
+  fuzzinessField: function() {
+    var fuzziness = String(this.get('fuzziness')).split(',');
+    var selected = this.get('fuzzinessList').filter(function(item) {
+      return fuzziness.find(function(given) {
+        return (item.value === given);
+      });
+    });
+    return selected;
+  }.property('fuzziness'),
 
   countries: null,
   countriesField: function() {
@@ -30,6 +44,12 @@ export default Ember.ArrayController.extend({
 
   page: 1,
   pageField: Ember.computed.oneWay('pageField'),
+
+  fuzzinessList: [
+    {value: "0", label: '0 - No Fuzziness'},
+    {value: "1", label: '1 - One Character Off'},
+    {value: "2", label: '2 - Two Characters Off'}
+  ],
 
   sourceList: [
     {value: 'DPL', label: 'Denied Persons List (DPL) - Bureau of Industry and Security'},
