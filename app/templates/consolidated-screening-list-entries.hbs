@@ -8,8 +8,8 @@
       {{input class="pure-input-1" value=qField}}
 
       <div class="pure-u-1 pure-u-md-11-24">
-    <label for="sources">Name</label>
-      {{input class="pure-input-1" value=nameField}}
+        <label for="sources">Name</label>
+        {{input class="pure-input-1" value=nameField}}
       </div>
 
         <div class="pure-u-1 pure-u-md-11-24">
@@ -20,6 +20,19 @@
             optionValuePath="content.value"
             optionLabelPath="content.label"
             id="fuzziness"
+            class="pure-input-1"
+            multiple=true}}
+        </div>
+
+
+        <div class="pure-u-1 pure-u-md-11-24">
+          <label for="phonetics">Phonetics</label>
+          {{view "select2"
+            content=phoneticsList
+            selection=phoneticsField
+            optionValuePath="content.value"
+            optionLabelPath="content.label"
+            id="phonetics"
             class="pure-input-1"
             multiple=true}}
         </div>

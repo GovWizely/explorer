@@ -1,13 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-  queryParams: ['q', 'countries', 'sources', 'page', 'fuzziness', 'name'],
+  queryParams: ['q', 'countries', 'sources', 'page', 'fuzziness', 'name', 'phonetics'],
 
   q: null,
   qField: Ember.computed.oneWay('q'),
 
   name: null,
   nameField: Ember.computed.oneWay('name'),
+
+  phonetics: null,
+  phoneticsField: function() {
+    var phonetics = String(this.get('phonetics')).split(',');
+    var selected = this.get('phoneticsList').filter(function(item) {
+      return phonetics.find(function(given) {
+        return (item.value === given);
+      });
+    });
+    return selected;
+  }.property('phonetics'),
 
   fuzziness: null,
   fuzzinessField: function() {
@@ -44,6 +55,11 @@ export default Ember.ArrayController.extend({
 
   page: 1,
   pageField: Ember.computed.oneWay('pageField'),
+
+  phoneticsList: [
+    {value: 'on', label: 'On'},
+    {value: 'off', label: 'Off'}
+  ],
 
   fuzzinessList: [
     {value: "0", label: '0 - No Fuzziness'},
