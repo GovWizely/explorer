@@ -8,8 +8,7 @@ export default Ember.Route.extend({
     sources: { refreshModel: true },
     page: { refreshModel: true },
     name: { refreshModel: true },
-    fuzziness: { refreshModel: true },
-    phonetics: { refreshModel: true }
+    fuzziness: { refreshModel: true }
   },
 
   actions: {
@@ -17,18 +16,9 @@ export default Ember.Route.extend({
       var countries,
         sources,
         fuzziness,
-        phonetics,
-        phoneticsField = this.controller.get('phoneticsField'),
         fuzzinessField =  this.controller.get('fuzzinessField'),
         countriesField = this.controller.get('countriesField'),
         sourcesField = this.controller.get('sourcesField');
-
-      if (phoneticsField){
-        phonetics = phoneticsField.map(function(item) {
-          return item.value;
-        });
-      }
-      this.controller.set('phonetics', phonetics);
 
       if (fuzzinessField) {
         fuzziness = fuzzinessField.map(function(item) {
