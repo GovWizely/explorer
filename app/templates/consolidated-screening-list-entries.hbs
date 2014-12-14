@@ -16,12 +16,12 @@
           <label for="fuzziness">Fuzziness</label>
           {{view "select2"
             content=fuzzinessList
-            selection=fuzzinessField
+            value=fuzzinessField
             optionValuePath="content.value"
             optionLabelPath="content.label"
+            prompt="0 - No Fuzziness"
             id="fuzziness"
-            class="pure-input-1"
-            multiple=true}}
+            class="pure-input-1"}}
         </div>
 
       <div class="pure-g">

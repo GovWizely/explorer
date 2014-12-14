@@ -10,15 +10,7 @@ export default Ember.ArrayController.extend({
   nameField: Ember.computed.oneWay('name'),
 
   fuzziness: null,
-  fuzzinessField: function() {
-    var fuzziness = String(this.get('fuzziness')).split(',');
-    var selected = this.get('fuzzinessList').filter(function(item) {
-      return fuzziness.find(function(given) {
-        return (item.value === given);
-      });
-    });
-    return selected;
-  }.property('fuzziness'),
+  fuzzinessField: Ember.computed.oneWay('fuzziness'),
 
   countries: null,
   countriesField: function() {
@@ -46,7 +38,6 @@ export default Ember.ArrayController.extend({
   pageField: Ember.computed.oneWay('pageField'),
 
   fuzzinessList: [
-    {value: "0", label: '0 - No Fuzziness'},
     {value: "1", label: '1 - One Character Off'},
     {value: "2", label: '2 - Two Characters Off'}
   ],
