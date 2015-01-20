@@ -318,6 +318,12 @@
       {{#if quota_name}}
           <tr><td>Quota name</td><td>{{quota_name}}</td></tr>
       {{/if}}
+      {{#if section_title}}
+          <h3>{{section_title}}</h3>
+      {{/if}}
+      {{#if section_url}}
+        <a href="{{unbound section_url}}" target="_blank">{{section_url}}</a>
+      {{/if}}
 
       {{#if annual_rates}}
         <tr><td>Annual Rates</td><td>
