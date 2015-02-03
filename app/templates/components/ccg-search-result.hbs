@@ -1,8 +1,10 @@
 {{#with document}}
-  <h3>{{pdf_title}}</h3>
-  <p>{{pdf_chapter}}</p>
-  <p>{{pdf_section}}</p>
-  <p>{{section_title}}</p>
-  <p>{{content}}</p>
-  <p>{{section_url}}</p>
+<h1>{{pdf_section}}</h1>
+<h3>{{section_title}}</h3>
+<ul class="tags">
+  <li><a href="#" class="tag">{{country}}</a></li>
+  <li><a href="#" class="tag">{{topic}}</a></li>
+</ul>
+<hr>
+<p>{{content}}</p>
 {{/with}}
