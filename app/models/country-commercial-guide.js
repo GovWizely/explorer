@@ -11,7 +11,7 @@ export default DS.Model.extend({
   section_url: DS.attr('string'),
 
   content: function() {
-    return  '<iframe src="/ccg' + this.get('section_url').substring(30) + '" marginheight="0" frameborder="0" height="100%" width="100%"></iframe>' ;
+    return  '<iframe src="/ccg' + this.get('section_url').substring(30) + '" frameborder="0"></iframe>' ;
     //return 'meh';
   }.property('section_url')
 });
