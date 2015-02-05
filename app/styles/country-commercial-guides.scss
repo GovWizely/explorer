@@ -2,22 +2,33 @@
 
 #country-commercial-guides {
   header {
-    background: url("books.jpg") center center;
-    background-size: 100% auto;
-    height: 350px;
+   
+   color: #333;
+   text-align: center;
+   padding: 2.5em 2em 0;
+   border-bottom: 1px solid #eee;
+   margin-bottom: 100px;
+ }
+  header h1 {
+    margin: 0.2em 0;
+    font-size: 3em;
+    font-weight: 300;
+    color:#134f8f;
   }
+
   form.search .countries {
     padding-right: 0;
   }
 }
 
 iframe {
-min-height: 500px;
+min-height: 600px;
 height:100%;
 width: 100%;
-margin:0;
 padding:0;
+
 }
+
 
 .content {
   max-width:1000px;
@@ -31,8 +42,9 @@ h1 {
   margin-bottom: .45em;
 }
 
+
 h3 {
-  color: #144795;
+  color: #134f8f;
   font-style: italic;
 }
 
