@@ -10,8 +10,13 @@ export default DS.Model.extend({
   topic: DS.attr('string'), 
   section_url: DS.attr('string'),
 
+
+  country_full: function(){
+    return this.get('pdf_title').substring(28);
+
+  }.property('pdf_title'),
+
   content: function() {
     return  '<iframe src="/ccg' + this.get('section_url').substring(30) + '" frameborder="0"></iframe>' ;
-    //return 'meh';
   }.property('section_url')
 });
