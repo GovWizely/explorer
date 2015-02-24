@@ -1,13 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-  queryParams: ['q', 'countries', 'sources', 'page', 'fuzziness', 'name'],
+  queryParams: ['q', 'countries', 'sources', 'page', 'fuzziness', 'name', 'address'],
 
   q: null,
   qField: Ember.computed.oneWay('q'),
 
   name: null,
   nameField: Ember.computed.oneWay('name'),
+
+  address: null,
+  addressField: Ember.computed.oneWay('address'),
 
   fuzziness: null,
   fuzzinessField: Ember.computed.oneWay('fuzziness'),
