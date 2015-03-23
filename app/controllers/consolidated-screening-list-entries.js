@@ -40,9 +40,14 @@ export default Ember.ArrayController.extend({
   page: 1,
   pageField: Ember.computed.oneWay('pageField'),
 
+
   fuzzinessList: [
     {value: "1", label: '1 - One Character Off'},
     {value: "2", label: '2 - Two Characters Off'}
+  ],
+
+  phoneticsList: [
+    {value: "1", label: 'On'}
   ],
 
   sourceList: [

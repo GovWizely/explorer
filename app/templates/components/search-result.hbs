@@ -380,6 +380,9 @@
           <tr><td>Post Type</td><td>{{post_type}}</td></tr>
       {{/if}}
       {{search-result-row-list label="Address" items=address}}
+      {{#if score}}
+        <tr><td>Score</td><td>{{score}}</td></tr>
+      {{/if}}
 
     </table>
   {{/with}}
