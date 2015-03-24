@@ -13,14 +13,24 @@
       </div>
 
       <div class="pure-u-1 pure-u-md-11-24">
-        <label for="fuzziness">Fuzziness</label>
+        <label for="fuzziness">Distance</label>
         {{view "select2"
           content=fuzzinessList
           value=fuzzinessField
           optionValuePath="content.value"
           optionLabelPath="content.label"
-          prompt="0 - No Fuzziness"
+          prompt="Off"
           id="fuzziness"
+          class="pure-input-1"}}
+
+        <label for="phonetics">Phonetics</label>
+        {{view "select2"
+          content=phoneticsList
+          value=phoneticsField
+          optionValuePath="content.value"
+          optionLabelPath="content.label"
+          prompt="Off"
+          id="phonetics"
           class="pure-input-1"}}
       </div>
 
