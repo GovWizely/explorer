@@ -13,7 +13,7 @@ export default Ember.ArrayController.extend({
   addressField: Ember.computed.oneWay('address'),
 
   phonetics: null,
-    phoneticsField: function() {
+  phoneticsField: function() {
     var phonetics = String(this.get('phonetics')).split(',');
     var selected = this.get('phoneticsList').filter(function(item) {
       return phonetics.find(function(given) {
@@ -60,11 +60,7 @@ export default Ember.ArrayController.extend({
   phoneticsList: [
     {value: "1", label: 'On'}
   ],
-
-  phoneticsList: [
-    {value: "1", label: 'On'}
-  ],
-
+  
   sourceList: [
     {value: 'DPL', label: 'Denied Persons List (DPL) - Bureau of Industry and Security'},
     {value: 'EL',  label: 'Entity List (EL) - Bureau of Industry and Security'},
