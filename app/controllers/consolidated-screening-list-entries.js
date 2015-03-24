@@ -61,6 +61,10 @@ export default Ember.ArrayController.extend({
     {value: "1", label: 'On'}
   ],
 
+  phoneticsList: [
+    {value: "1", label: 'On'}
+  ],
+
   sourceList: [
     {value: 'DPL', label: 'Denied Persons List (DPL) - Bureau of Industry and Security'},
     {value: 'EL',  label: 'Entity List (EL) - Bureau of Industry and Security'},
