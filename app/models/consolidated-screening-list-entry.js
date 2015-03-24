@@ -32,8 +32,6 @@ export default DS.Model.extend({
   addresses: DS.hasMany('address'),
   identifications: DS.hasMany('identification'),
 
-  score: DS.attr('string'),
-
   searchResultHeader: function() {
     return this.get('name');
   }.property('name')
