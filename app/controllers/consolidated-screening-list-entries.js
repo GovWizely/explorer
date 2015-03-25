@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-  queryParams: ['q', 'countries', 'sources', 'page', name', 'address'],
+  queryParams: ['q', 'countries', 'sources', 'page', 'name', 'address'],
 
   q: null,
   qField: Ember.computed.oneWay('q'),
