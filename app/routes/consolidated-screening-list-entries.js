@@ -8,8 +8,7 @@ export default Ember.Route.extend({
     sources: { refreshModel: true },
     page: { refreshModel: true },
     name: { refreshModel: true },
-    address: { refreshModel: true },
-    fuzziness: { refreshModel: true }
+    address: { refreshModel: true }
   },
 
   actions: {
@@ -36,7 +35,6 @@ export default Ember.Route.extend({
       this.controller.set('q', this.controller.get('qField'));
       this.controller.set('name', this.controller.get('nameField'));
       this.controller.set('address', this.controller.get('addressField'));
-      this.controller.set('fuzziness', this.controller.get('fuzzinessField'));
       this.controller.set('page', (page || 1));
     }
   }

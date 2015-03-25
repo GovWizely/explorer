@@ -12,8 +12,7 @@ export default Ember.Route.extend({
       sources: p.sources,
       page: p.page,
       name: p.name,
-      address: p.address,
-      fuzziness: p.fuzziness
+      address: p.address
     });
   }
 });
