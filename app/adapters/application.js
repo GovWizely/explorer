@@ -57,7 +57,8 @@ export default DS.RESTAdapter.extend({
   },
 
   queryString: function(offset, query) {
-    var params = [], key;
+    var params = ['api_key=' + ENV.webservicesApiKey],
+      key;
 
     if (offset > 0) {
       params.push('offset='+offset);
