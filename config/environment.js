@@ -6,6 +6,8 @@ module.exports = function(environment) {
     locationType: 'auto',
     webservicesBaseURL: 'http://localhost:3000/v2',
     webservicesApiKey: 'cfVhA_8HepggR81yU6yo1KGN',
+    developerportalUrl: 'http://localhost:4000/developerportal',
+    apiKeyUrl: 'http://localhost:3000',
     appTitle: 'ITA Explorer',
     EmberENV: {
       FEATURES: {
@@ -37,6 +39,8 @@ module.exports = function(environment) {
     ENV.locationType = 'hash';
     ENV.webservicesBaseURL = 'http://api.govwizely.com/v2';
     ENV.webservicesApiKey = 'Jnl2JctPOiUL9x7HVFR2m8Sr';
+    ENV.developerportalUrl = 'http://govwizely.github.io/developerportal';
+    ENV.apiKeyUrl = 'https://api.govwizely.com';
   }
 
   return ENV;

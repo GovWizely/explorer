@@ -39,7 +39,7 @@ export default DS.RESTAdapter.extend({
   path: function(type) {
     var supported = {
       'explorer@model:consolidated-screening-list-entry:': 'consolidated_screening_list',
-      'explorer@model:faqs:': 'faqs',
+      'explorer@model:faqs:': 'ita_faqs',
       'explorer@model:trade-event:': 'trade_events',
       'explorer@model:tariff-rate:': 'tariff_rates',
       'explorer@model:trade-leads:': 'trade_leads',

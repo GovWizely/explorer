@@ -166,7 +166,12 @@
         <tr><td>Country</td><td>{{country}}</td></tr>
       {{/if}}
 
-      {{search-result-row-list label="Industries" items=industries}}
+      {{#if industries.original}}
+        {{search-result-row-list label="Original Industries" items=industries.original}}
+        {{search-result-row-list label="Mapped Industries" items=industries.mapped}}
+      {{else}}
+        {{search-result-row-list label="Industries" items=industries}}
+      {{/if}}
 
       {{#if contacts}}
         <tr><td>Contacts</td><td>
