@@ -53,17 +53,15 @@
 
       <section>
       <div id="body-content">
-          <p style="font-size: small; text-align: right;">{{#link-to "consolidated-screening-list-entries"}}CSL{{/link-to}} |
-          {{#link-to "trade-events"}}Trade Events{{/link-to}} |
-          {{#link-to "faqs"}}ITA FAQs{{/link-to}} |
-          {{#link-to "tariff-rates"}}Tariff Rates{{/link-to}} |
-          {{#link-to "trade-leads"}}Trade Leads{{/link-to}} |
-          {{#link-to "market-research-library"}}Market Research Library{{/link-to}} |
-          {{#link-to "ita-office-locations"}}ITA Office Locations{{/link-to}} |
-          {{#link-to "sharepoint-trade-articles"}}ITA Articles{{/link-to}}</p>
-          <div id="main">
-            {{outlet}}
-          </div>
+        {{view "select2"
+          content=navItems
+          prompt="Search APIs"
+          selection=selectedSearchApi
+          optionValuePath="content.value"
+          optionLabelPath="content.label"}}
+        <div id="main">
+          {{outlet}}
+        </div>
       </div>
       </section>
 

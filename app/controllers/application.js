@@ -6,5 +6,28 @@ export default Ember.Controller.extend({
   showCcg: false,
   showCcgReport: false,
   developerportalUrl: ENV.developerportalUrl,
-  apiKeyUrl: ENV.apiKeyUrl
+  apiKeyUrl: ENV.apiKeyUrl,
+
+  navItems: [
+    { label: "Market Research Library", value: "market-research-library"},
+    { label: "Consolidated Screening List", value: "consolidated-screening-list-entries"},
+    { label: "Trade Events", value: "trade-events"},
+    { label: "Trade Leads", value: "trade-leads"},
+    { label: "Tariff Rates", value: "tariff-rates"},
+    { label: "FAQs on Exporting", value: "faqs"},
+    { label: "ITA Offices & Centers", value: "ita-office-locations"},
+    { label: "Trade News & Articles", value: "sharepoint-trade-articles"}
+  ],
+
+  selectedSearchApi: undefined,
+  watchType: function() {
+    if (this.get('selectedSearchApi')) {
+      var selected = this.get('selectedSearchApi').value;
+
+      // To make it so that the select is always set to the default prompt.
+      this.set('selectedSearchApi', undefined);
+
+      this.transitionToRoute(selected);
+    }
+  }.observes('selectedSearchApi')
 });
