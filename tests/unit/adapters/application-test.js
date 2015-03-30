@@ -29,7 +29,7 @@ test('buildUrl: supported model types', function() {
     type = 'explorer@model:faqs:';
   equal(
     adapter.buildUrl(type, {}),
-    'http://localhost:3000/v2/faqs/search?api_key=cfVhA_8HepggR81yU6yo1KGN'
+    'http://localhost:3000/v2/ita_faqs/search?api_key=cfVhA_8HepggR81yU6yo1KGN'
   );
 
   throws(
