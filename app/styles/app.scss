@@ -16,6 +16,8 @@ a {
     width: 100%;
     td {
       vertical-align: top;
+      word-wrap: break-word;
+      word-break: break-word;
     }
     ol {
       margin: 0;
