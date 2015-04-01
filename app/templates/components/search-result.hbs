@@ -318,7 +318,7 @@
           <tr><td>Link text</td><td>{{link_text}}</td></tr>
       {{/if}}
       {{#if link_url}}
-          <tr><td>Link url</td><td>{{link_url}}</td></tr>
+          <tr><td>Link url</td><td><a href="{{unbound link_url}}" target="_blank">{{link_url}}</a></td></tr>
       {{/if}}
       {{#if quota_name}}
           <tr><td>Quota name</td><td>{{quota_name}}</td></tr>
