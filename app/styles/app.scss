@@ -14,10 +14,14 @@ a {
 #search-results {
   table {
     width: 100%;
-    td {
-      vertical-align: top;
-      word-wrap: break-word;
-      word-break: break-word;
+    tr {
+      td {
+        vertical-align: top;
+        &:nth-child(2) {
+          word-wrap: break-word;
+          word-break: break-word;
+        }
+      }
     }
     ol {
       margin: 0;
