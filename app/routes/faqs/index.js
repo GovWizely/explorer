@@ -8,7 +8,11 @@ export default Ember.Route.extend({
 
     return this.store.find('faqs', {
       q: p.q,
-      page: p.page
+      page: p.page,
+      update_date: p.update_date,
+      industries: p.industries,
+      countries: p.countries,
+      topics: p.topics
     });
   }
 });

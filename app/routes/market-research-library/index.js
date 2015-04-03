@@ -9,7 +9,8 @@ export default Ember.Route.extend({
     return this.store.find('market-research-library', {
       q: p.q,
       countries: p.countries,
-      page: p.page
+      page: p.page,
+      expiration_date: p.expiration_date
     });
   }
 });
