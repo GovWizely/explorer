@@ -44,7 +44,10 @@ export default Ember.Controller.extend({
   pageField: Ember.computed.oneWay('pageField'),
 
   sourceList: [
-    {value: 'African Development Bank', label: 'African Development Bank'}
+    {value: 'STATE', label: 'State Department BIDS'},
+    {value: 'CANADA', label: 'Canada'},
+    {value: 'FBO', label: 'FBOpen / FedBizOpps'},
+    {value: 'UK', label: 'United Kingdom'},
   ],
 
   countryList: [
