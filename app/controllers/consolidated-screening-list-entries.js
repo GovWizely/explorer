@@ -20,13 +20,13 @@ export default Ember.ArrayController.extend({
   endDateFieldStart: null,
   endDateFieldEnd: null,
 
-    expiration_date: null,
+  expiration_date: null,
   expirationDateFieldStart: null,
   expirationDateFieldEnd: null,
 
-    issue_date: null,
+  issue_date: null,
   issueDateFieldStart: null,
-  issueDateFieldEnd: null,  
+  issueDateFieldEnd: null,
 
   countries: null,
   countriesField: function() {
