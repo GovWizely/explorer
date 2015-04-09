@@ -14,9 +14,9 @@ export default Ember.Controller.extend({
   endDateFieldStart: null,
   endDateFieldEnd: null,
 
-    publish_date_amended: null,
+  publish_date_amended: null,
   publishDateAmendedFieldStart: null,
-  publishDateAmendedFieldEnd: null,  
+  publishDateAmendedFieldEnd: null,
 
   countries: null,
   countriesField: function() {
