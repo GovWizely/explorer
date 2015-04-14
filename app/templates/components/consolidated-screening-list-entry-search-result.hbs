@@ -98,7 +98,9 @@
 
       {{#if identifications}}
         <tr><td>IDs</td><td>
+          <ol>
           {{#each id in identifications}}
+            <li>
             <table class="identification">
               {{#if id.type}}
                 <tr><td>Type: </td><td>{{id.type}}</td></tr>
@@ -116,7 +118,9 @@
                 <tr><td>Expiration Date: </td><td>{{id.expiration_date}}</td></tr>
               {{/if}}
             </table>
+            </li>
           {{/each}}
+          </ol>
         </td></tr>
       {{/if}}
 

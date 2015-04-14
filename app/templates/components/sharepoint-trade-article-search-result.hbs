@@ -23,6 +23,10 @@
         <tr><td>Release Date</td><td>{{release_date}}</td></tr>
       {{/if}}
 
+      {{#if expiration_date}}
+        <tr><td>Expiration Date</td><td>{{expiration_date}}</td></tr>
+      {{/if}}
+
       {{search-result-row-list label="Source Agencies" items=source_agencies}}
       {{search-result-row-list label="Source Business Units" items=source_business_units}}
       {{search-result-row-list label="Source Offices" items=source_offices}}
@@ -40,6 +44,7 @@
       {{/if}}
 
       {{search-result-row-list label="Export Phases" items=export_phases}}
+      {{search-result-row-list label="Industries" items=industries}}
       {{search-result-row-list label="Trade Regions" items=trade_regions}}
       {{search-result-row-list label="Trade Programs" items=trade_programs}}
       {{search-result-row-list label="Trade Initiatives" items=trade_initiatives}}
