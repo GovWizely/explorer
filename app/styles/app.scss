@@ -33,6 +33,9 @@ a {
       margin: 0;
     }
     table.identification {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: top;
       width: auto;
       tr td {
         border: 0;
