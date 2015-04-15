@@ -13,13 +13,13 @@
         <tr><td>Update Date</td><td>{{update_date}}</td></tr>
       {{/if}}
       {{#if topic}}
-        <tr><td>Topic</td><td>{{topic}}</td></tr>
+        {{search-result-row-list label="Topic" items=topic}}
       {{/if}}
       {{#if industry}}
-        <tr><td>Industry</td><td>{{industry}}</td></tr>
+        {{search-result-row-list label="Industry" items=industry}}
       {{/if}}
       {{#if country}}
-        <tr><td>Country</td><td>{{country}}</td></tr>
+        {{search-result-row-list label="Country" items=country}}
       {{/if}}
 
     </table>

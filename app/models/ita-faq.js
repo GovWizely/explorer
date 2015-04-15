@@ -6,9 +6,9 @@ export default DS.Model.extend({
 
   update_date: DS.attr('string'),
 
-  topic: DS.attr('string'),
-  industry: DS.attr('string'),
-  country: DS.attr('string'),
+  topic: DS.attr('array'),
+  industry: DS.attr('array'),
+  country: DS.attr('array'),
 
   searchResultHeader: function() {
     return this.get('question');
