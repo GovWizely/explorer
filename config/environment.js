@@ -37,9 +37,9 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.baseURL = '/explorer';
     ENV.locationType = 'hash';
-    ENV.webservicesBaseURL = 'http://api.govwizely.com/v2';
+    ENV.webservicesBaseURL = 'https://api.govwizely.com/v2';
     ENV.webservicesApiKey = 'Jnl2JctPOiUL9x7HVFR2m8Sr';
-    ENV.developerportalUrl = 'http://govwizely.github.io/developerportal';
+    ENV.developerportalUrl = '//govwizely.github.io/developerportal';
     ENV.apiKeyUrl = 'https://api.govwizely.com';
   }
 
