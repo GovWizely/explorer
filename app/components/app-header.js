@@ -13,7 +13,8 @@ export default Ember.Component.extend({
       { text: 'FAQs on Exporting', path:           'faqs-exporting.html' },
       { text: 'ITA Offices & Centers', path:       'ita-office-locations.html' },
       { text: 'Trade News & Articles', path:       'ita-trade-articles.html' },
-      { text: 'Zip Code to USEAC', path:   'ita-zip-codes.html'},
-      { text: 'Trade News & Articles', path:       'ita-trade-articles.html' }
+      { text: 'Zip Code to USEAC', path:           'ita-zip-codes.html'},
+      { text: 'Trade News & Articles', path:       'ita-trade-articles.html' },
+      { text: 'Export Assistance Centers', path:   'ita-zip-codes.html'},
     ]
 });
