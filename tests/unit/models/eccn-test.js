@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleForModel('eccn-entry', 'EccnEntry', {
+moduleForModel('eccn', 'Eccn', {
   // Specify the other units that are required for this test.
   needs: []
 });

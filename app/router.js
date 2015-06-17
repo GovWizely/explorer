@@ -14,7 +14,7 @@ Router.map(function() {
   this.resource('ita-office-locations', function(){});
   this.resource('country-commercial-guides', function(){});
   this.resource('sharepoint-trade-articles', function(){});
-  this.resource('eccn-entries', function(){});
+  this.resource('eccns', function(){});
 });
 
 export default Router;

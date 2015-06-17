@@ -3,9 +3,9 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('controller:eccn-entries', 'EccnEntriesController', {
+moduleFor('controller:eccns/index', 'EccnsIndexController', {
   // Specify the other units that are required for this test.
-  // needs: ['controller:foo']
+  needs: ['controller:eccns']
 });
 
 // Replace this with your real tests.

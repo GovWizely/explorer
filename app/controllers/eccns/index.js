@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  needs: 'eccn-entries',
+  needs: 'eccns',
 
-  page: Ember.computed.alias('controllers.eccn-entries.page'),
+  page: Ember.computed.alias('controllers.eccns.page'),
 
   total: function() {
     var total = this.store.metadataFor(this.get('model.type')).total;
