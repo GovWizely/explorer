@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  needs: 'ita-zip-codes',
+  needs: 'eccns',
 
-  page: Ember.computed.alias('controllers.ita-zip-codes.page'),
+  page: Ember.computed.alias('controllers.eccns.page'),
 
   total: function() {
     var total = this.store.metadataFor(this.get('model.type')).total;
