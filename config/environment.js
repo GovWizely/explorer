@@ -5,8 +5,8 @@ module.exports = function(environment) {
     environment: environment,
     locationType: 'auto',
     webservicesBaseURL: 'http://localhost:3000/v2',
-    webservicesApiKey: 'S8Y2ZreHn7dsBHUdhJBDkxNW',
-    developerportalUrl: 'http://localhost:4000',
+    webservicesApiKey: 'cfVhA_8HepggR81yU6yo1KGN',
+    developerportalUrl: 'http://localhost:4000/developerportal',
     apiKeyUrl: 'http://localhost:3000',
     appTitle: 'ITA Explorer',
     EmberENV: {
