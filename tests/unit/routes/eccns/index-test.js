@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:eccn-entries', 'EccnEntriesRoute', {
+moduleFor('route:eccns/index', 'EccnsIndexRoute', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

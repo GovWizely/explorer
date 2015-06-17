@@ -5,7 +5,7 @@ export default Ember.Route.extend({
 
     var p = transition.queryParams;
 
-    return this.store.find('eccn-entry', {
+    return this.store.find('eccn', {
       q: p.q,
       description: p.description
     });

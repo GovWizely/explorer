@@ -47,7 +47,7 @@ export default DS.RESTAdapter.extend({
       'explorer@model:ita-office-location:': 'ita_office_locations',
       'explorer@model:country-commercial-guide:': 'country_commercial_guides',
       'explorer@model:sharepoint-trade-article:': 'trade_articles',
-      'explorer@model:eccn-entry:': 'eccns'
+      'explorer@model:eccn:': 'eccns'
     };
     var path = supported[type];
 

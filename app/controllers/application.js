@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
     { label: "FAQs on Exporting", value: "ita-faqs"},
     { label: "ITA Offices & Centers", value: "ita-office-locations"},
     { label: "Trade News & Articles", value: "sharepoint-trade-articles"},
-    { label: "ECCN", value: "eccn-entries"}
+    { label: "ECCNs", value: "eccns"}
   ],
 
   selectedSearchApi: undefined,
