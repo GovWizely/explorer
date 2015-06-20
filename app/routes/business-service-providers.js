@@ -3,15 +3,15 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   queryParams: {
     q: { refreshModel: true },
-    country: { refreshModel: true },
-    category: { refreshModel: true },
+    ita_offices: { refreshModel: true },
+    categories: { refreshModel: true },
     page: { refreshModel: true }
   },
 
   actions: {
     search: function(page) {
-      this.controller.set('country', this.controller.get('countryField'));
-      this.controller.set('category', this.controller.get('categoryField'));
+      this.controller.set('ita_offices', this.controller.get('itaOfficesField'));
+      this.controller.set('categories', this.controller.get('categoriesField'));
       this.controller.set('q', this.controller.get('qField'));
       this.controller.set('page', (page || 1));
     }

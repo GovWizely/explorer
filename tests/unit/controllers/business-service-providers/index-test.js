@@ -5,7 +5,7 @@ import {
 
 moduleFor('controller:business-service-providers/index', 'BusinessServiceProvidersIndexController', {
   // Specify the other units that are required for this test.
-  // needs: ['controller:foo']
+  needs: ['controller:business-service-providers']
 });
 
 // Replace this with your real tests.

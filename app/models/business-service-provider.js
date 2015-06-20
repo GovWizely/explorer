@@ -12,4 +12,8 @@ export default DS.Model.extend({
   contact_title: DS.attr('string'),
   contact_name: DS.attr('string'),
   category: DS.attr('string'),
+
+  searchResultHeader: function() {
+    return this.get('company_name');
+  }.property('company_name')
 });

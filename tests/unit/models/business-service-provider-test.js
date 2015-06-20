@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleForModel('business-service-providers', 'BusinessServiceProvider', {
+moduleForModel('business-service-provider', 'BusinessServiceProvider', {
   // Specify the other units that are required for this test.
   needs: []
 });

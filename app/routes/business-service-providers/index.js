@@ -5,7 +5,8 @@ export default Ember.Route.extend({
     var p = transition.queryParams;
     return this.store.find('business-service-provider', {
       q: p.q,
-      country: p.country,
+      ita_offices: p.ita_offices,
+      categories: p.categories,
       page: p.page
     });
   }
