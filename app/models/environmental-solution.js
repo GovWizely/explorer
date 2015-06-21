@@ -9,4 +9,8 @@ export default DS.Model.extend({
   name_spanish: DS.attr('string'),
   source_created_at: DS.attr('string'),
   source_updated_at: DS.attr('string'),
+
+  searchResultHeader: function() {
+    return this.get('name_english');
+  }.property('name_english')
 });

@@ -5,7 +5,7 @@ import {
 
 moduleFor('controller:environmental-solutions/index', 'EnvironmentalSolutionsIndexController', {
   // Specify the other units that are required for this test.
-  // needs: ['controller:foo']
+  needs: ['controller:environmental-solutions']
 });
 
 // Replace this with your real tests.
