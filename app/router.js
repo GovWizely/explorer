@@ -17,6 +17,7 @@ Router.map(function() {
   this.resource('sharepoint-trade-articles', function(){});
   this.resource('eccns', function(){});
   this.resource('business-service-providers', function(){});
+  this.resource('environmental-solutions', function(){});
 });
 
 export default Router;

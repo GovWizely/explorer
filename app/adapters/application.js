@@ -49,7 +49,8 @@ export default DS.RESTAdapter.extend({
       'explorer@model:country-commercial-guide:': 'country_commercial_guides',
       'explorer@model:sharepoint-trade-article:': 'trade_articles',
       'explorer@model:eccn:': 'eccns',
-      'explorer@model:business-service-provider:': 'business_service_providers'
+      'explorer@model:business-service-provider:': 'business_service_providers',
+      'explorer@model:environmental-solution:': 'environmental_solutions'
     };
     var path = supported[type];
 
