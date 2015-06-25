@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
     { label: "FAQs on Exporting", value: "ita-faqs"},
     { label: "ITA Offices & Centers", value: "ita-office-locations"},
     { label: "Trade News & Articles", value: "sharepoint-trade-articles"},
-    { label: "ECCNs", value: "eccns"},
+    //{ label: "ECCNs", value: "eccns"},
     { label: "Zip Code to USEAC", value: "ita-zip-codes"},
     { label: "Business Service Providers", value: "business-service-providers"},
     { label: "Environmental Solutions", value: "environmental-solutions"}
