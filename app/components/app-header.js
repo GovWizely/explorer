@@ -11,8 +11,6 @@ export default Ember.Component.extend({
       { text: 'Trade Leads', path:                 'trade-leads.html' },
       { text: 'Tariff Rates', path:                'tariff-rates.html' },
       { text: 'FAQs on Exporting', path:           'faqs-exporting.html' },
-      { text: 'ITA Offices & Centers', path:       'ita-office-locations.html' },
-      { text: 'Trade News & Articles', path:       'ita-trade-articles.html' },
-      { text: 'Zip Code to USEAC', path:   'ita-zip-codes.html'}
+      { text: 'List of all APIs', path:            'api-list.html' }
     ]
 });
