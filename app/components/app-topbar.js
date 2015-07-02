@@ -11,14 +11,13 @@ export default Ember.Component.extend({
     { text: 'Trade Leads', path: 'trade-leads.html' },
     { text: 'Tariff Rates', path: 'tariff-rates.html' },
     { text: 'FAQs on Exporting', path: 'faqs-exporting.html' },
-    { text: 'ITA Offices & Centers', path: 'ita-office-locations.html' },
-    { text: 'Trade News & Articles', path: 'ita-trade-articles.html' },
-    { text: 'Zip Code to USEAC', path: 'ita-zip-codes.html'}
+    { text: 'List of all APIs', path: 'api-list.html' }
   ],
   additionalResourcesNavItems: [
     { text: 'Guidance', path: 'guidance.html' },
     { text: 'Contact', path: 'contact.html' },
     { text: 'App Gallery', path: 'app-gallery.html' },
+    { text: 'API List', path: 'api-list.html' },
     { text: 'API FAQs', path: 'api-faqs.html' },
     { text: 'Change Log', path: 'change-log.html' },
     { text: 'Terms of Service', path: 'tos.html' }
