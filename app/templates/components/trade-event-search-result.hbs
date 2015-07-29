@@ -18,9 +18,13 @@
       {{#if time_zone}}
         <tr><td>Time Zone</td><td>{{time_zone}}</td></tr>
       {{/if}}
+
       {{#if cost}}
         <tr><td>Cost</td><td>{{cost}}</td></tr>
+      {{else}}
+        <tr><td>Cost</td><td>0</td></tr>
       {{/if}}
+
       {{#if cost_currency}}
         <tr><td>Cost Currency</td><td>{{cost_currency}}</td></tr>
       {{/if}}
@@ -95,6 +99,25 @@
           </ol>
         </td></tr>
       {{/if}}
+
+      {{#if id}}
+        <tr><td>ID</td><td>{{id}}</td></tr>
+      {{/if}}
+
+      {{#if start_date}}
+        <tr><td>Start Date</td><td>{{start_date}}</td></tr>
+      {{/if}}
+
+      {{#if end_date}}
+        <tr><td>End Date</td><td>{{end_date}}</td></tr>
+      {{/if}}
+
+      {{#if source}}
+        <tr><td>Source</td><td>{{source}}</td></tr>
+      {{/if}}
+      
+      {{search-result-row-list label="Industries" items=industries}}
+
 
     </table>
   {{/with}}
