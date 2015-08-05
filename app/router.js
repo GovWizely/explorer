@@ -18,6 +18,7 @@ Router.map(function() {
   this.resource('eccns', function(){});
   this.resource('business-service-providers', function(){});
   this.resource('environmental-solutions', function(){});
+  this.resource('ita-taxonomies', function(){});
 });
 
 export default Router;
