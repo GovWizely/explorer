@@ -50,8 +50,7 @@ export default DS.RESTAdapter.extend({
       'explorer@model:sharepoint-trade-article:': 'trade_articles',
       'explorer@model:eccn:': 'eccns',
       'explorer@model:business-service-provider:': 'business_service_providers',
-      'explorer@model:environmental-solution:': 'environmental_solutions',
-      'explorer@model:ita-taxonomy:': 'ita_taxonomies'
+      'explorer@model:environmental-solution:': 'environmental_solutions'
     };
     var path = supported[type];
 
