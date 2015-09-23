@@ -36,6 +36,18 @@
             multiple="true"}}
         </div>
 
+        <div class="pure-u-1 pure-u-md-11-24">
+          <label for="industries">Industries</label>
+          {{view "select2"
+            content=industryList
+            selection=industriesField
+            optionValuePath="content.value"
+            optionLabelPath="content.label"
+            id="industries"
+            class="pure-u-1"
+            multiple="true"}}
+        </div>
+
         <div class="pure-u-1">
           {{input type="submit" value="Search" class="pure-button pure-button-primary"}}
         </div>

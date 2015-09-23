@@ -15,12 +15,12 @@
         <tr><td>URL</td><td><a href="{{unbound url}}" target="_blank">{{url}}</a></td></tr>
       {{/if}}
 
-      {{#if industries.original}}
-        {{search-result-row-list label="Original Industries" items=industries.original}}
+      {{#if industries}}
+        {{search-result-row-list label="Industries" items=industries}}
       {{/if}}
 
-      {{#if industries.mapped}}
-        {{search-result-row-list label="Mapped Industries" items=industries.mapped}}
+      {{#if ita_industries}}
+        {{search-result-row-list label="ITA Industries" items=ita_industries}}
       {{/if}}
 
       {{#if countries}}
