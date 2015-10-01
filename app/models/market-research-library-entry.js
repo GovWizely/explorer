@@ -7,6 +7,7 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   expiration_date: DS.attr('string'),
   industries: DS.attr('array'),
+  ita_industries: DS.attr('array'),
   report_type: DS.attr('string'),
   title: DS.attr('string'),
   url: DS.attr('string'),
