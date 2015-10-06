@@ -41,7 +41,6 @@ export default Ember.Controller.extend({
 
   sourceList: [
     {value: 'DL', label: 'Department of State Direct Line'},
-    {value: 'EXIM', label: 'Export-Import Bank'},
     {value: 'ITA', label: 'International Trade Administration'},
     {value: 'SBA', label: 'Small Business Administration'},
     {value: 'USTDA', label: 'U.S. Trade and Development Agency'}
