@@ -13,7 +13,6 @@ Router.map(function() {
   this.resource('market-research-library-entries', function(){});
   this.resource('ita-office-locations', function(){});
   this.resource('ita-zip-codes', function(){});
-  this.resource('country-commercial-guides', function(){});
   this.resource('sharepoint-trade-articles', function(){});
   this.resource('eccns', function(){});
   this.resource('business-service-providers', function(){});
