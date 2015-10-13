@@ -19,9 +19,11 @@
           <tr><td>Published Date</td><td>{{published_date}}</td></tr>
       {{/if}}
 
-      {{search-result-row-list label="Countries" items=country}}
+      {{#if source}}
+          <tr><td>Source</td><td>{{source}}</td></tr>
+      {{/if}}
 
-      {{search-result-row-list label="Sources" items=source}}
+      {{search-result-row-list label="Countries" items=country}}
 
       {{search-result-row-list label="Topics" items=topic}}
 
