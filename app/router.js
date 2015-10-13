@@ -18,6 +18,7 @@ Router.map(function() {
   this.resource('business-service-providers', function(){});
   this.resource('environmental-solutions', function(){});
   this.resource('ita-taxonomies', function(){});
+  this.resource('country-fact-sheets', function(){});
 });
 
 export default Router;
