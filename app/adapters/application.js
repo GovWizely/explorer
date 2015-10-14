@@ -50,7 +50,8 @@ export default DS.RESTAdapter.extend({
       'explorer@model:eccn:': 'eccns',
       'explorer@model:business-service-provider:': 'business_service_providers',
       'explorer@model:environmental-solution:': 'environmental_solutions',
-      'explorer@model:ita-taxonomy:': 'ita_taxonomies'
+      'explorer@model:ita-taxonomy:': 'ita_taxonomies',
+      'explorer@model:country-fact-sheet:': 'country_fact_sheets'
     };
     var path = supported[type];
 

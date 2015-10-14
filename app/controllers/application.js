@@ -20,6 +20,7 @@ export default Ember.Controller.extend({
     { label: "Business Service Providers", value: "business-service-providers"},
     { label: "Environmental Solutions", value: "environmental-solutions"},
     { label: "ITA Taxonomies", value: "ita-taxonomies"}
+    //{ label: "Country Fact Sheets", value: "country-fact-sheets"}
   ],
 
   selectedSearchApi: undefined,
