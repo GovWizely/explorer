@@ -18,6 +18,7 @@ export default Ember.Component.extend({
     { text: 'Contact', path: 'contact.html' },
     { text: 'App Gallery', path: 'app-gallery.html' },
     { text: 'API List', path: 'api-list.html' },
+    { text: 'Search Widgets', path: 'search-widgets.html' },
     { text: 'API FAQs', path: 'api-faqs.html' },
     { text: 'Change Log', path: 'change-log.html' },
     { text: 'Terms of Service', path: 'tos.html' }
