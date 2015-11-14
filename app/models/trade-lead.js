@@ -43,6 +43,6 @@ export default DS.Model.extend({
   categories: DS.attr('array'),
 
   searchResultHeader: function() {
-    return this.get('title');
+    return (this.get('title') || this.get('description'));
   }.property('title')
 });

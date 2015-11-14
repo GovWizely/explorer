@@ -49,6 +49,7 @@ export default Ember.Controller.extend({
     {value: 'FBO', label: 'FBOpen / FedBizOpps'},
     {value: 'UK', label: 'United Kingdom'},
     {value: 'MCA', label: 'Millenium Challenge Corporation'},
+    {value: 'AUSTRALIA', label: 'Australia'},
   ],
 
   countryList: [
