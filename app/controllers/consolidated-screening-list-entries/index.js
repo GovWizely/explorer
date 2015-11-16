@@ -10,6 +10,11 @@ export default Ember.ArrayController.extend({
     return total;
   }.property('model'),
 
+  searchPerformedAt: function() {
+    var spa = this.store.metadataFor(this.get('model.type')).searchPerformedAt;
+    return spa;
+  }.property('model'),
+
   lastPage: function() {
     return Math.max(Math.ceil(this.get('total') / 10), 1);
   }.property('total'),

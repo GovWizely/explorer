@@ -79,7 +79,7 @@ export default DS.JSONSerializer.extend({
 
   extractMeta: function(store, type, payload) {
     if (payload) {
-      store.metaForType(type, {total: payload.total});
+      store.metaForType(type, {total: payload.total, searchPerformedAt: payload.search_performed_at});
     }
   },
 
