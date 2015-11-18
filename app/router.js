@@ -19,6 +19,7 @@ Router.map(function() {
   this.resource('environmental-solutions', function(){});
   this.resource('ita-taxonomies', function(){});
   this.resource('country-fact-sheets', function(){});
+  this.resource('de-minimis', function(){});
 });
 
 export default Router;
