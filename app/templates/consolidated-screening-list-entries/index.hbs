@@ -1,5 +1,4 @@
 {{total-results total=total}}
-Search performed at: {{searchPerformedAt}}
 
 <div id="search-results">
   {{#each document in content}}
@@ -16,3 +15,5 @@ Search performed at: {{searchPerformedAt}}
     {{/if}}
   {{/each}}
 </div>
+
+{{search-performed-at date=searchPerformedAt}}
