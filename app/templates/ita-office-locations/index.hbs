@@ -1,4 +1,9 @@
+<p>
 {{total-results total=total}}
+{{#if searchPerformedAt}}
+    {{search-performed-at date=searchPerformedAt}}
+{{/if}}
+</p>
 
 <div id="search-results">
   {{#each document in content}}

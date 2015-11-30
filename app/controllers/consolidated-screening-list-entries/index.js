@@ -6,13 +6,15 @@ export default Ember.ArrayController.extend({
   page: Ember.computed.alias('controllers.consolidated-screening-list-entries.page'),
 
   total: function() {
-    var total = this.store.metadataFor(this.get('model.type')).total;
-    return total;
-  }.property('model'),
+    return this.get('metadata').total;
+  }.property('metadata'),
 
   searchPerformedAt: function() {
-    var spa = this.store.metadataFor(this.get('model.type')).searchPerformedAt;
-    return spa;
+    return this.get('metadata').searchPerformedAt;
+  }.property('metadata'),
+
+  metadata: function() {
+    return this.store.metadataFor(this.get('model.type'));
   }.property('model'),
 
   lastPage: function() {

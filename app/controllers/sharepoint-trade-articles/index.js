@@ -6,8 +6,15 @@ export default Ember.Controller.extend({
   page: Ember.computed.alias('controllers.sharepoint-trade-articles.page'),
 
   total: function() {
-    var total = this.store.metadataFor(this.get('model.type')).total;
-    return total;
+    return this.get('metadata').total;
+  }.property('metadata'),
+
+  searchPerformedAt: function() {
+    return this.get('metadata').searchPerformedAt;
+  }.property('metadata'),
+
+  metadata: function() {
+    return this.store.metadataFor(this.get('model.type'));
   }.property('model'),
 
   lastPage: function() {
