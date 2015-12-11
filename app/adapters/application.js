@@ -51,7 +51,8 @@ export default DS.RESTAdapter.extend({
       'explorer@model:business-service-provider:': 'business_service_providers',
       'explorer@model:environmental-solution:': 'environmental_solutions',
       'explorer@model:ita-taxonomy:': 'ita_taxonomies',
-      'explorer@model:country-fact-sheet:': 'country_fact_sheets'
+      'explorer@model:country-fact-sheet:': 'country_fact_sheets',
+      'explorer@model:de-minimis:': 'v1/de_minimis'
     };
     var path = supported[type];
 
