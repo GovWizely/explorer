@@ -50,6 +50,7 @@ export default Ember.Controller.extend({
     {value: 'UK', label: 'United Kingdom'},
     {value: 'MCA', label: 'Millenium Challenge Corporation'},
     {value: 'AUSTRALIA', label: 'Australia'},
+    {value: 'USTDA', label: 'US Trade and Development Agency'},
   ],
 
   countryList: [
