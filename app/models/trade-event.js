@@ -28,6 +28,9 @@ export default DS.Model.extend({
 
   contacts: DS.hasMany('contact'),
 
+  trade_regions: DS.attr('string'),
+  world_regions: DS.attr('string'),
+
   searchResultHeader: function() {
     return this.get('event_name');
   }.property('event_name')

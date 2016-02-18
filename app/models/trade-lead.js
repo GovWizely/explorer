@@ -42,6 +42,9 @@ export default DS.Model.extend({
   max_contract_value: DS.attr('string'),
   categories: DS.attr('array'),
 
+  trade_regions: DS.attr('string'),
+  world_regions: DS.attr('string'),
+
   searchResultHeader: function() {
     return (this.get('title') || this.get('description'));
   }.property('title')
